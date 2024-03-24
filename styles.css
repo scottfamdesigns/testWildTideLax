@@ -1,0 +1,212 @@
+html, body {
+    width: 100%;
+    padding-left: 0px;
+    padding-top: 0px;
+    background: #FFFFFF;
+}
+
+.headerBar {
+    position: fixed;
+    width: 100%;
+    height: 10vw;
+    left: 0px;
+    top: 0px;
+    z-index: 100;
+
+    background: linear-gradient(90deg, rgba(7, 30, 90, 0.79) 43.63%, rgba(77, 188, 190, 0.79) 80.87%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.headerBarImage {
+    position: absolute;
+    width: 100%;
+    height: 10vw;
+}
+
+.logo {
+    position: absolute;
+    width: 12.5%;
+    left: 8vw;
+    top: 2.5vw;
+    z-index: 99999;
+}
+
+.registerButton {
+    position: absolute;
+    width: 21.73vw;
+    left: 75vw;
+    top: 13.5vw;
+
+    background: linear-gradient(90deg, #071E5A 0%, #4DBCBE 100%);
+    box-shadow: 0px 4px 4px #010E34;
+    border-radius: 5px;
+
+    font-family: 'Encode Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4vw;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    letter-spacing: 0.09em;
+    z-index: 1;
+
+    color: #FFFFFF;
+}
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #374979;
+    /*background-color: #071E5A;*/
+    width: 100vw;
+    height: 10vw;
+    top: 7vw;
+    z-index: 99998;
+    
+}
+
+.dropdown-content a {
+    font-family: 'Encode Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+    letter-spacing: 0.09em;
+    text-decoration: none;
+    display: block;
+
+    color: #FFFFFF;
+}
+
+.dropdown-content p {
+    font-family: 'Encode Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25vw;
+    line-height: 2.5vw;
+    letter-spacing: 0.09em;
+    text-decoration: none;
+    display: block;
+
+    color: #FFFFFF;
+}
+
+.column {
+    position: absolute;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.dropdown-content a:hover {
+    color: #4DBCBE;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.menuButtonsText {
+    font-family: 'Encode Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5vw;
+    line-height: 6vw;
+    text-align: center;
+    vertical-align: center;
+    letter-spacing: 0.09em;
+    text-decoration: none;
+    top: 2vw;
+    width: 10vw;
+    height: 6vw;
+
+    color: #FFFFFF;
+}
+
+.menuHome {
+    position: absolute;
+    left: 30vw;
+
+}
+
+.menuAbout {
+    position: absolute;
+    left: 39vw;
+}
+
+.menuPrograms {
+    position: absolute;
+    left: 49vw;
+}
+
+.menuPrograms:hover {
+    background-color: #374979;
+}
+
+.menuDropDownPrograms {
+    left: 52vw;
+    top: .75vw;
+    height: 14vw;
+}
+
+.menuDropDownProgramsDescription {
+    left: 20vw;
+    top: -.25vw;
+    height: 7vw;
+    width: 28vw;
+    font-family: 'Encode Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.5vw;
+    letter-spacing: 0.09em;
+    text-decoration: none;
+    text-align: right;
+    vertical-align: center;
+    padding-right: 2vw;
+    border-right: solid .1vw #FFFFFF;
+}
+
+.menuConnect {
+    position: absolute;
+    left: 60vw;
+}
+
+.menuEvents {
+    position: absolute;
+    left: 70vw;
+}
+
+.menuEvents:hover {
+    background-color: #374979;
+}
+
+.menuDropDownEvents {
+    left: 52vw;
+    top: 1vw;
+    height: 14vw;
+}
+
+.menuDropDownProgramsEvents {
+    left: 20vw;
+    top: -.5vw;
+    height: 7vw;
+    width: 28vw;
+    text-align: right;
+    vertical-align: center;
+    padding-right: 2vw;
+    border-right: solid .1vw #FFFFFF;
+}
+
+.menuSponsor {
+    position: absolute;
+    left: 80vw;
+}
