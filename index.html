@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
         <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>   
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap');   
             .backgroundImage {
                 position: absolute;
                 width:100%;
                 left: 0%;
-                top: 11vw;
+                top: 10vw;
                 background-repeat: no-repeat;
                 object-fit: cover;
                 object-position: 70%;
@@ -55,14 +57,6 @@
                 top: 62vw;
             }
 
-            .socialButtonsYoutube {
-                position: absolute;
-                width: 41px;
-                height: 41px;
-                left: 46.5vw;
-                top: 62vw;
-            }
-
             .socialButtonsInsta {
                 position: absolute;
                 width: 41px;
@@ -71,7 +65,7 @@
                 top: 62vw;
             }
 
-            #mainPageText {
+            .mainPageText {
                 position: absolute;
                 width: 28vw;
                 height: 4.0vw;
@@ -172,16 +166,20 @@
                 height: 76vw;
                 left: 0px;
                 top: 59.85vw;
+                opacity: .8;
 
                 display: inline-block;
-
-                opacity: 0.6;
 
                 background-color: #374979;
 
             }
 
-            #aboutUsBar {
+            #aboutUsLink {
+                position: absolute;
+                top: 50vw;
+            }
+
+            .aboutUsBar {
                 position: absolute;
                 width: 100%;
                 height: 11vw;
@@ -194,13 +192,13 @@
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             }
 
-            #aboutUs {
+            .aboutUs {
                 font-family: 'Encode Sans';
                 font-style: normal;
-                font-weight: 600;
-                font-size: 1.7vw;
-                line-height: 3.5vw;
+                font-weight: 700;
+                font-size: 1.8vw;
                 text-align: center;
+                letter-spacing: 0.09em;
 
                 color: #FFFFFF;
 
@@ -211,7 +209,7 @@
                 position: absolute;
                 width: 42.25vw;
                 left: 2vw;
-                top: 83vw;
+                top: 81vw;
 
             }
 
@@ -219,7 +217,7 @@
                 position: absolute;
                 width: 42.25vw;
                 left: 52vw;
-                top: 83vw;
+                top: 81vw;
 
             }
 
@@ -257,6 +255,11 @@
 
             }
 
+            #findYourProgramLink {
+                position: absolute;
+                top: 120vw;
+            }
+
             .findYourProgramBackground {
                 position: absolute;
                 width: 100%;
@@ -275,28 +278,13 @@
                 height: 40vw;
                 left: 4vw;
                 top: 147vw;
-                filter: grayscale(10);
-            }
-            
-            .findGirlsBackgroundBox {
-
-                position: absolute;
-                width: 27vw;
-                height: 40vw;
-                left: 4vw;
-                top: 147vw;
-                opacity: .8;
-
-                background: #FFFFFF;
-
             }
 
             .findGirlsImage {
                 position: absolute;
-                width: 50vw;
-                height: 38vw;
-                left: -7vw;
-                top: 150vw;
+                height: 33vw;
+                left: 1vw;
+                top: 154vw;
 
             }
 
@@ -309,25 +297,11 @@
 
             }
 
-            .findBoysBackgroundBox {
-
-                position: absolute;
-                width: 27vw;
-                height: 40vw;
-                left: 35vw;
-                top: 147vw;
-                opacity: .3;
-
-                background: #FFFFFF;
-
-            }
-
             .findBoysImage {
                 position: absolute;
-                width: 32vw;
-                height: 25vw;
-                left: 32vw;
-                top: 163vw;
+                width: 17.5vw;
+                left: 41.5vw;
+                top: 154.2vw;
 
             }
 
@@ -341,24 +315,10 @@
 
             }
 
-            .findDevBackgroundBox {
-
-                position: absolute;
-                width: 27vw;
-                height: 40vw;
-                left: 66vw;
-                top: 147vw;
-                opacity: .8;
-
-                background: #FFFFFF;
-
-            }
-
             .findDevImage {
                 position: absolute;
-                width: 20vw;
-                height: 38vw;
-                left: 73vw;
+                height: 32vw;
+                left: 72vw;
                 top: 155vw;
 
             }
@@ -455,12 +415,75 @@
                 top: 190vw;
             }
 
+            .ourStoryHeader {
+                position: absolute;
+                width: 25vw;
+                left: 37.5vw;
+                top: 198vw;
+            }
+
+            .ourStory {
+                position: absolute;
+                width: 70vw;
+                left: 15vw;
+                top: 205vw;
+
+                font-family: 'Encode Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 2vw;
+                line-height: 2.5vw;
+                text-align: left;
+
+                color: #000D35;
+            }
+
+            #sponsorLink{
+                position: absolute;
+                top: 267vw;
+            }
+
+            #sponsorSection {
+                position: absolute;
+                top: 280vw;
+            }
+
+            .thankYouSponsors {
+                position: absolute;
+                top: 0vw;
+                width: 35vw;
+                left: 32.5vw;
+            }
+
+            .sponsorSarahsKitchen {
+                position: absolute;
+                top: 7vw;
+                width: 40vw;
+                left: 30vw;
+            }
+
+            .sponsorContact {
+                position: absolute;
+                top: 34vw;
+                width: 80vw;
+                left: 10vw;
+
+                font-family: 'Encode Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 2vw;
+                line-height: 2.5vw;
+                text-align: center;
+
+                color: #000D35;
+            }
+
             .footerBar {
                 position: absolute;
                 width: 100%;
                 height: 8vw;
                 left: 0px;
-                top: 193vw;
+                top: 330vw;
 
                 background: linear-gradient(90deg, rgba(7, 30, 90, 0.79) 43.63%, rgba(77, 188, 190, 0.79) 80.87%);
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -489,157 +512,383 @@
                 color: #FFFFFF;
             }
 
+            .layer1_class {
+                position: absolute;
+                top: 30vw;
+                left: 30vw;
+                visibility: visible;
+            }
 
+            .layer2_class {
+                position: absolute;
+                top: 0vw;
+                left: 0vw;
+                visibility: hidden;
+            }
 
-            @media screen and (max-width: 800px){
-                .body {
-                    background-color: #EEEEEE;
-                }
-                
-                .headerBar {
-                    width: 100%;
-                    height: 24vw;
-                    left: 0px;
-                    top: 0px;
-
-                    background: linear-gradient(90deg, rgba(7, 30, 90, 0.79) 43.63%, rgba(77, 188, 190, 0.79) 80.87%);
-                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                }
-
-                .headerBarImage{
-                    height: 24vw;
-                }
-
-                .backgroundImage {
-                    width: 100%;
-                    height: 100%;
-                    top: 40vw;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    object-position: 70%;
-                    opacity: 0.1;
-                    filter: drop-shadow(px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-                }
-                
-                .logo{
-                    left: 36vw;
-                    min-width: 28vw;
-                    top: 8vw;
-                }
-
-                .wildTideWords {
-                    width: 70vw;
-                    top: 110vw;
-                    left: 15vw;
-                }
-
-                /*.menu{}*/
-                .socialButtonsFacebook {
-                    position: absolute;
-                    width: 41px;
-                    height: 41px;
-                    left: 37.5vw;
-                    top: 140vw;
-                }
-
-                .socialButtonsYoutube {
-                    position: absolute;
-                    width: 41px;
-                    height: 41px;
-                    left: 46.5vw;
-                    top: 140vw;
-                }
-
-                .socialButtonsInsta {
-                    position: absolute;
-                    width: 41px;
-                    height: 41px;
-                    left: 56vw;
-                    top: 140vw;
-                }
-                .registerButton{
-                    width: 80vw;
-                    left: 10vw;
-                    top: 190vw;
-                    font-size: 4.5vw;
-                    padding-top: 3.5vw;
-                    padding-bottom: 3.5vw;
-                    z-index: 100;
-                }
-
-                .mainPageText{
-                    width: 80vw;
-                    left: 10vw;
-                    top: 147vw;
-                    font-size: 3.8vw;
-                    padding-top: 3px;
-                    padding-bottom: 3px;
-                    letter-spacing: 0.09em;
-                }
-
-                .connectWithUsButton{
-                    width: 80vw;
-                    left: 10vw;
-                    top: 190vw; 
-                    font-size: 4.5vw;
-                    padding-bottom: 3.5vw;
-                    padding-top: 3.5vw;
-                }
-
-                .boyImage{
-                    width: 70%;
-                    left: 0vw;
-                    top: 23vw;
-                }
-
-                .girlImage{
-                    width: 67%;
-                    left: 28vw;
-                    top: 18vw;
-                }
-
-                .whatWeDo, .mission, .whoWeAre, .ageGroupsWeSupport, .aboutUsColor, .aboutUsBackground, .aboutImage, .aboutUsBar,
-                .findBoysBackground, .findBoysImage, .findDevBackground, .findDevImage, .findGirlsBackground, .findGirlsImage, .findYour,
-                .findYourProgramBackground, .devFindButton, .boysFindButton, .girlsFindButton, .program {
+            @media screen and (min-width: 690px){
+                .findYourGirlsMobile, .findYourBoysMobile, .findYourDevMobile, .findYourProgramMobile, .registerMobile,
+                .weSupportYou {
                     display: none;
                 }
             }
+
+            @media screen and (max-width: 690px){
+                .wildTideWords {
+                    position: absolute;
+                    width: 78vw;
+                    left: 12vw;
+                    top: 110vw;
+
+                }
+
+                .girlImage {
+                    position: absolute;
+                    width: 70vw;
+                    left: 25vw;
+                    top: 14vw;
+
+                }
+
+                .boyImage {
+                    position: absolute;
+                    width: 70vw;
+                    left: 0vw;
+                    top: 25vw;
+                }
+
+                .aboutUsBackground {
+                    position: absolute;
+                    width: 100%;
+                    left: 0vw;
+                    top: 370vw;
+
+                    filter: grayscale(2);
+                }
+
+                .aboutUsColor {
+                    top: 445vw;
+                    height: 220vw;
+                }
+
+                .aboutImage {
+                    top: 362vw;
+                    height: 20vw;
+                    width: 35vw;
+                    left: 5vw;
+                }
+
+                .aboutUs {
+                    top: 350vw;
+                    font-family: 'Encode Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 1.4vw;
+                    text-align: center;
+                    letter-spacing: 0.09em;
+
+                    color: #FFFFFF;
+
+                    text-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25);
+                }
+
+                .aboutUsBar {
+                    top: 350vw;
+                    height: 20vw;
+                    opacity: 1;
+                }
+
+                .aboutUsColorMobile {
+                    position: absolute;
+                    width: 100%;
+                    height: 80vw;
+                    left: 0px;
+                    top: 370vw;
+                    display: inline-block;
+
+                    opacity: .75;
+
+                    background-color: #374979;
+                }
+
+                .findYourProgramButton, .whyWildTideButton, .communityStrengthButton, .girlsFindButton, .boysFindButton, .devFindButton,
+                .findBoysBackground, .findBoysBackgroundBox, .findDevBackground, .findDevBackgroundBox, .findGirlsBackground, .findGirlsBackgroundBox,
+                .findBoysImage, .findDevImage, .findGirlsImage, .findYourProgramBackground, .findYour, .program, .ourStoryHeader {
+                    display: none;
+                }
+
+                .whatWeDo {
+                    top: 450vw;
+                    width: 90vw;
+                    left: 5vw;
+
+                    font-weight: 600;
+                    font-size: 4.7vw;
+                    line-height: 3.5vw;
+                    text-align: center;
+
+                    line-height: 5.5vw;
+                }
+
+                .mission {
+                    top: 505vw;
+                    width: 90vw;
+                    left: 5vw;
+
+                    font-weight: 600;
+                    font-size: 4.7vw;
+                    line-height: 3.5vw;
+                    text-align: center;
+
+                    line-height: 5.5vw;
+                }
+
+                .whoWeAre {
+                    top: 553vw;
+                    width: 90vw;
+                    left: 5vw;
+
+                    font-weight: 600;
+                    font-size: 4.7vw;
+                    line-height: 3.5vw;
+                    text-align: center;
+
+                    line-height: 5.5vw;
+                }
+
+                .ageGroupsWeSupport {
+                    top: 608vw;
+                    width: 90vw;
+                    left: 5vw;
+
+                    font-weight: 600;
+                    font-size: 4.7vw;
+                    line-height: 3.5vw;
+                    text-align: center;
+
+                    line-height: 5.5vw;
+                }
+
+                .socialButtonsFacebook {
+                    top: 143vw;
+                    left: 55vw;
+                    width: 10vw;
+                    height: 10vw;
+                }
+
+                .socialButtonsInsta {
+                    top: 143vw;
+                    left: 35vw;
+                    width: 10vw;
+                    height: 10vw;
+                }
+
+                .backgroundImage {
+                    position: absolute;
+                    top: 50vw;
+                    left: 0vw;
+                    width: 100%;
+                    height: 170vw;
+                    object-fit: cover;
+                    object-position: 83%;
+
+                }
+
+                .mainPageText {
+                    top: 150vw;
+                    width: 100%;
+                    left: 0vw;
+
+                    font-size: 4vw;
+                    line-height: 5vw;
+                }
+
+                .findYourGirlsMobile {
+                    position: absolute;
+                    top: 230vw;
+                    left: 32vw;
+                    height: 40vw;
+                }
+
+                .findYourBoysMobile {
+                    position: absolute;
+                    top: 275vw;
+                    left: 50vw;
+                    height: 40vw;
+                }
+                .findYourDevMobile {
+                    position: absolute;
+                    top: 290vw;
+                    left: 10vw;
+                    height: 47vw;
+                }
+
+                .findYourProgramMobile {
+                    position: absolute;
+                    top: 272vw;
+                    left: 10vw;
+                    width: 40vw;
+                }
+
+                .ourStory {
+                    top: 674vw;
+                    
+                    font-size: 3vw;
+                    width: 82vw;
+                    left: 4vw;
+                    line-height: 4vw;
+                }
+
+                .gradientButton {
+                    background: linear-gradient(90deg, #071E5A 0%, #4DBCBE 100%);
+                    box-shadow: 0px 4px 4px #010E34;
+                    border-radius: 15px;
+
+                    font-family: 'Encode Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 3.4vw;
+                    text-align: center;
+                    text-decoration: none;
+                    padding-top: 4vw;
+                    padding-bottom: 4vw;
+                    letter-spacing: 0.09em;
+                    z-index: 1;
+
+                    color: #FFFFFF;
+                }
+
+                .registerMobile {
+                    position: absolute;
+                    top: 170vw;
+                    left: 10vw;
+                    width: 80vw;
+                }
+
+                .weSupportYou {
+                    position: absolute;
+                    top: 190vw;
+                    left: 15vw;
+                    width: 80vw;
+                }
+
+                #sponsorSection {
+                    top: 810vw;
+                }
+
+                .sponsorContact {
+                    width: 90vw;
+                    left: 2.5vw;
+                    font-size: 2.5vw;
+                    line-height: 4.5vw;
+                }
+
+                .sponsorSarahsKitchen {
+                    top: 11vw;
+                }
+
+                .thankYouSponsors {
+                    width: 70vw;
+                    left: 15vw;
+                }
+
+                .footerBar {
+                    top: 860vw;
+                    height: 35vw;
+                }
+
+                .footerText {
+                    font-size: 3.25vw;
+                    width: 95vw;
+                    left: 2vw;
+                    top: 6vw;
+                    line-height: 4.5vw;
+                }
+
+                .footerImage {
+                    top: 2vw;
+                    left: 40vw;
+                    width: 20vw;
+                }
+            }
+
         </style>
+        <script>
+            function downLoad() {
+                if (document.all){
+                    document.all["layer1"].style.visibility="hidden";
+                    document.all["layer2"].style.visibility="visible";
+                } else if (document.getElementById){
+                    node = document.getElementById("layer1").style.visibility="hidden";
+                    node = document.getElementById("layer2").style.visibility="visible";
+                }
+            }
+        </script>
     </head>
-    <body>
+    <body onload="downLoad()">
+        <div id="layer1" class="layer1_class">
+            <div id="loader">
+            </div>
+            <img src="logo.png" class="loadingLogo loadingBackground">
+        </div>
+        <div id="layer2" class="layer2_class">
+        </div>
+            
         <div class="headerBar">
             <img src="waveBanner.png" class="headerBarImage">
+            <header class="header">
+            <a href="/" class="logo"></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="index.html#mainPageText">About</a></li>
+                <li><a href="girlsPage.html">Girls Program</a></li>
+                <li><a href="boysPage.html">Boys Program</a></li>
+                <li><a href="pinkOutPage.html">Pink Out</a></li>
+                <li><a href="torchRunPage.html">Torch Run</a></li>
+                <li><a href="index.html#sponsors">Sponsors</a></li>
+            </ul>
+            </header>
             <a href="index.html">
                 <img src="logo.png" class="logo">
             </a>
-            <a href="index.html#mainPageText" class="menuAbout menuButtonsText">ABOUT</a>
+            <a href="index.html#aboutUsLink" class="menuAbout menuButtonsText">ABOUT</a>
             <div class="dropdown"><a class="menuPrograms menuButtonsText">PROGRAMS</a>
                 <div class="dropdown-content row">
-                    <p class="menuDropDownProgramsDescription column"><strong>Programs</strong><br/>Find your program</p>
-                    <div class="menuDropDownPrograms column">
-                        <a href="testGirlsPage.html">Girls Program</a>
-                        <a href="testBoysPage.html">Boys Program</a>
-                        <a href="testDevPage.html">Developmental Program</a>
+                    <p class="menuDropDownDescription column"><strong>Programs</strong><br/>Find your program</p>
+                    <div class="menuDropDown column">
+                        <a href="girlsPage.html">Girls Program</a>
+                        <a href="boysPage.html">Boys Program</a>
+                        <a href="devPage.html">Developmental Program</a>
                     </div>
                 </div>
             </div>
-            <a href="index.html" class="menuConnect menuButtonsText">CONNECT</a>
+            <div class="dropdown"><a class="menuConnect menuButtonsText">CONNECT</a>
+                <div class="dropdown-content row">
+                    <p class="menuDropDownDescription column"><strong>Connect</strong><br/>Connect with us</p>
+                    <div class="menuDropDown column">
+                        <a href="https://www.facebook.com/profile.php?id=61555624635626">Facebook</a>
+                        <a href="https://www.instagram.com/wildtidelax?igsh=MThpcXQ1bTEzbXA1aw==">Instagram</a>
+                        <a href="mailto: wildtidelacrosse@gmail.com">Email</a>
+                    </div>
+                </div>
+            </div>
             <div class="dropdown"><a class="menuEvents menuButtonsText">EVENTS</a>
                 <div class="dropdown-content row">
-                    <p class="menuDropDownProgramsEvents column"><strong>Events</strong><br/>Building community strength</p>
-                    <div class="menuDropDownEvents column">
-                        <a href="testPinkOutPage.html">Pink Out</a>
-                        <a href="testTorchRunPage.html">Torch Run</a>
+                    <p class="menuDropDownDescription column"><strong>Events</strong><br/>Building community strength</p>
+                    <div class="menuDropDown column">
+                        <a href="pinkOutPage.html">Pink Out</a>
+                        <a href="torchRunPage.html">Torch Run</a>
                     </div>
                 </div>
             </div>
-            <a href="index.html" class="menuSponsor menuButtonsText">SPONSOR</a>
+            <a href="index.html#sponsorLink" class="menuSponsor menuButtonsText">SPONSOR</a>
         </div>
         <div>
             <img src="background.jpg" class="backgroundImage">
         </div>
         <div>
-            <a href="https://google.com" class="registerButton">Register for 2024 Season</a>
+            <a href="https://wildtide.usetopscore.com" class="registerButton">Register for 2024 Season</a>
         </div>
         <div>
             <img src="boymainpage.png" class="boyImage">
@@ -647,27 +896,33 @@
             <img src="wildtide_lacrosse_wording_image-removebg.png" class="wildTideWords">
         </div>
         <div>
-            <p id="mainPageText">The premiere youth travel lacrosse organization for Brunswick County, North Carolina.</p>
+            <p class="mainPageText">The premiere youth travel lacrosse organization for Brunswick County, North Carolina.</p>
         </div>
         <div class="socialButtonsBar">
             <img src="socialbutton-facebook.png" class="socialButtonsFacebook">
             <img src="socialbutton-instagram.png" class="socialButtonsInsta">
-            <img src="socialbutton-youtube.png" class="socialButtonsYoutube">
         </div>
         <div>
-            <a href="https://google.com" class="solidBlueButton findYourProgramButton">Find Your Program</a>
-            <a href="https://google.com" class="solidBlueButton whyWildTideButton">Why WildTide?</a>
-            <a href="https://google.com" class="solidBlueButton communityStrengthButton">Community Strength</a>
+            <a href="wildtide.usetopscore.com" class="gradientButton registerMobile">Register for 2024 Season</a>
+            <img src="wesupportyoupink.png" class="weSupportYou">
         </div>
-        <div id="aboutUs">
+        <div id="findYourProgramLink"></div>
+        <div>
+            <a href="index.html#findYourProgramLink" class="solidBlueButton findYourProgramButton">Find Your Program</a>
+            <a href="index.html#ourStoryLink" class="solidBlueButton whyWildTideButton">Why WildTide?</a>
+            <a href="pinkOutPage.html" class="solidBlueButton communityStrengthButton">Community Strength</a>
+        </div>
+        <div id="aboutUsLink"></div>
+        <div class="aboutUs">
             <img src="aboutUsImage.jpeg" class="aboutUsBackground">
             <a class="aboutUsColor"></a>
-            <a id="aboutUsBar"></a>
+            <a class="aboutUsColorMobile"></a>
+            <a class="aboutUsBar"></a>
             <img src="aboutUsWords.png" class="aboutImage">
-            <p class="whatWeDo">What We Do: <br> WildTide provides the opportunity for girls and boys to play lacrosse - ranging from the first time you hold a stick to support for college recruitment.</p>
-            <p class="mission">Mission: <br> To support youth lacrosse players, empowering well-rounded individuals who strengthen our community with the skills and lessons for success in life.</p>
-            <p class="whoWeAre">Who We Are: <br> WildTide is the premiere youth travel lacrosse organization for Brunswick County, North Carolina serving as a part of the Brunswick County Youth Council, a 501(3)c nonprofit organization.</p>
-            <p class="ageGroupsWeSupport">Age Groups We Support: <br> Currently we have opportunities for High School Girls and Boys, Middle School Girls and Boys, and Girls and Boys Developmental K-4.</p>
+            <p class="whatWeDo">What We Do: <br/><br/> WildTide provides the opportunity for girls and boys to play lacrosse - ranging from the first time you hold a stick to support for college recruitment. We are committed to the growth of lacrosse in Brunswick County, NC.</p>
+            <p class="mission">Mission: <br/><br/> To support youth lacrosse players, empowering well-rounded individuals who strengthen our community with the skills and lessons for success in life.</p>
+            <p class="whoWeAre">Who We Are: <br/><br/> WildTide is the premiere youth travel lacrosse organization for Brunswick County, North Carolina serving as a part of the Brunswick County Youth Council, a 501(3)c nonprofit organization.</p>
+            <p class="ageGroupsWeSupport">Age Groups We Support: <br/><br/>Currently we have opportunities for High School Girls and Boys, Middle School Girls and Boys, and Boys Developmental 5th and 6th Grade, and Girls Developmental K-4. </p>
         </div>
         <div>
             <p class="darkHeaderText findYour">FIND YOUR</p>
@@ -677,20 +932,55 @@
             <img src="girlsBackgroundHuddle.jpg" class="findGirlsBackground">
             <a class="findGirlsBackgroundBox"></a>
             <img src="girlsFindProgramImage.png" class="findGirlsImage">
-            <a href="testGirlsPage.html"><button class="girlsFindButton">GIRLS PROGRAM</button></a>
+            <div>
+                <a href="girlsPage.html">
+                    <img src="findYourGirlsMobile.png" class="findYourGirlsMobile">                      
+                </a>
+            </div>
+            <a href="girlsPage.html"><button class="girlsFindButton">GIRLS PROGRAM</button></a>
             <img src="findboysbackground.png" class="findBoysBackground">
             <a class="findBoysBackgroundBox"></a>
             <img src="boysFindProgramImage.png" class="findBoysImage">
-            <a href="testBoysPage.html"><button class="boysFindButton">BOYS PROGRAM</button></a>
+            <div>
+                <a href="boysPage.html">
+                    <img src="findYourBoysProgram.png" class="findYourBoysMobile">                       
+                </a>
+            </div>
+            <a href="boysPage.html"><button class="boysFindButton">BOYS PROGRAM</button></a>
             <img src="findDevBackground.jpg" class="findDevBackground">
-            <a class="findDevBackgroundBox"></a>
             <img src="devFindProgramImage.png" class="findDevImage">
-            <a href="testDevPage.html"><button class="devFindButton">DEVELOPMENTAL</button></a>
+            <div>
+                <a href="devPage.html">
+                    <img src="findYourDevMobile.png" class="findYourDevMobile">                       
+                </a>
+            </div>
+            <a href="devPage.html"><button class="devFindButton">DEVELOPMENTAL</button></a>
+            <img src="findYourProgramMobile.png" class="findYourProgramMobile">
+        </div>
+        <div>
+            <img src="ourStory.png" class="ourStoryHeader">
+            <p class="ourStory">Where we came from.
+                <br/><br/>In 2018, founders Anne Dotson, Brandie Price, Maryann Dolan and Rebecca Allen partnered with nonprofit Brunswick County Youth Council 501(c)3 to form WildTide as a place for young athletes to not just learn this amazing sport, but learn valuable life skills - such as teamwork, time management, the importance of working towards goals, community engagement and much more. 
+                <br/><br/>Originally, our program started as a Middle School Girls Team, but over the years we have grown to now encompass those in Middle School, High School, and Developmental Program for both young ladies and young men in and around our county.
+                <br/><br/>In 2021 we had our first group of graduating seniors, and since that year we have helped over a dozen players earn scholarship opportunities to continue not only their lacrosse career, but their education.
+                <br/><br/>We believe in “Recycling Lacrosse” - so we have a number of former players who return to assist coaching so that our younger generation can see the older generation of players and hear from them and gain knowledge of what it takes to get to the next level.
+                <br/><br/>At wild tide we not only believe in building the team, but building the individual. We want all of our players to have the confidence to navigate the world ahead of them.
+                <br/><br/>Come play with us and Rise with the Tide. </p>
+        </div>
+        <div id="sponsorLink"></div>
+        <div id="sponsorSection">
+            <img src="thankYouSponsors.png" class="thankYouSponsors">
+            <a href="https://www.facebook.com/sarahskitchenatthebeach/">
+                <img src="sarahsKitchenSponsor.png" class="sponsorSarahsKitchen">
+            </a>
+            <p class="sponsorContact">Interested in fundraising or donating to WildTide?<br/> 
+                Please reach out to our Fundraising Coordinator, <a href="mailto:Janet@bluecoastreality.com">Janet@bluecoastreality.com</a>
+            </p>
         </div>
         <div class="footerBar">
             <img src="footerWildTideImage.png" class="footerImage">
-            <p class="footerText">WildTide Lacrosse is part of the Brunswick County Youth Council -  a 501(c)(3) nonprofit organization. <br/></p>
-            <p class="footerText" style="top: 3vw;">Copyright 2024 © WildTide Lacrosse <br/> All Rights Reserved.</p>
+            <p class="footerText">WildTide Lacrosse is part of the Brunswick County Youth Council -  a 501(c)(3) nonprofit organization. <br/><br/> Copyright 2024 © WildTide Lacrosse <br/> All Rights Reserved.</p>
+        </div>
         </div>
     </body>
 </html>

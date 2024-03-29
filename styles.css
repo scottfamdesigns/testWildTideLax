@@ -1,8 +1,37 @@
+   
 html, body {
     width: 100%;
     padding-left: 0px;
     padding-top: 0px;
     background: #FFFFFF;
+}
+
+#loader {
+  position: absolute;
+  left: 26vw;
+  top: 26.5vw;
+  width: 20vw;
+  height: 20vw;
+  border: 2vw solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 2vw solid #4EAC9A ;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
 }
 
 .headerBar {
@@ -31,8 +60,24 @@ html, body {
     z-index: 99999;
 }
 
+.loadingLogo {
+  position: absolute;
+  width: 21vw;
+  height: 21vw;
+  top: 28vw;
+  left: 27.5vw;
+}
+
+.loadingBackground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+  background-color: #071E5A;
+}
+
 .registerButton {
-    position: absolute;
+    position: fixed;
     width: 21.73vw;
     left: 75vw;
     top: 13.5vw;
@@ -64,11 +109,10 @@ html, body {
     display: none;
     position: absolute;
     background-color: #374979;
-    /*background-color: #071E5A;*/
     width: 100vw;
     height: 10vw;
     top: 7vw;
-    z-index: 99998;
+    z-index: 99997;
     
 }
 
@@ -132,12 +176,6 @@ html, body {
     color: #FFFFFF;
 }
 
-.menuHome {
-    position: absolute;
-    left: 30vw;
-
-}
-
 .menuAbout {
     position: absolute;
     left: 39vw;
@@ -152,13 +190,13 @@ html, body {
     background-color: #374979;
 }
 
-.menuDropDownPrograms {
+.menuDropDown {
     left: 52vw;
     top: .75vw;
     height: 14vw;
 }
 
-.menuDropDownProgramsDescription {
+.menuDropDownDescription {
     left: 20vw;
     top: -.25vw;
     height: 7vw;
@@ -180,6 +218,10 @@ html, body {
     left: 60vw;
 }
 
+.menuConnect:hover {
+  background-color: #374979;
+}
+
 .menuEvents {
     position: absolute;
     left: 70vw;
@@ -187,12 +229,6 @@ html, body {
 
 .menuEvents:hover {
     background-color: #374979;
-}
-
-.menuDropDownEvents {
-    left: 52vw;
-    top: 1vw;
-    height: 14vw;
 }
 
 .menuDropDownProgramsEvents {
@@ -209,4 +245,156 @@ html, body {
 .menuSponsor {
     position: absolute;
     left: 80vw;
+}
+
+@media screen and (min-width: 690px){
+  .header, .menu, .menu-icon, .navicon, .menu-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 690px){
+    
+    .logo{
+        left: 35vw;
+        min-width: 29.5vw;
+        top: 3vw;
+
+    }
+
+    .headerBar {
+        width: 100%;
+        height: 20vw;
+        left: 0px;
+        top: 0px;
+
+        background: linear-gradient(90deg, rgba(7, 30, 90, 0.79) 43.63%, rgba(77, 188, 190, 0.79) 80.87%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .headerBarImage{
+        height: 20vw;
+    }
+
+    .header {
+        position: fixed;
+        text-align: right;
+        padding-top: 2vw;
+        right: 0vw;
+        height: 200vw;
+        width: 100%;
+        z-index: 3;
+      }
+      
+      .header ul {
+        margin: auto;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: #374979;
+        text-decoration: none;
+      }
+      
+      .header li a {
+        font-family: 'Encode Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3.5vw;
+        letter-spacing: 0.09em;
+        text-decoration: none;
+        text-align: left;
+        color: #FFFFFF;
+        padding-left: 5vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        border-bottom: solid .1vw #071E5A;
+        display: block;
+        text-decoration: none;
+      }
+
+
+      .header li a:hover {
+        color: #4DBCBE;
+      }
+      
+      .header .logo {
+        display: block;
+        float: left;
+        font-size: 4em;
+        padding: 1vw 1vw;
+        text-decoration: none;
+      }
+      
+      .header .menu {
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+      }
+
+      .header .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        padding: 8vw 7vw;
+        position: relative;
+        user-select: none;
+      }
+      
+      .header .menu-icon .navicon {
+        background: #333;
+        display: block;
+        height: .75vw;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 8vw;
+        border-radius: 5px;
+      }
+      
+      .header .menu-icon .navicon:before,
+      .header .menu-icon .navicon:after {
+        background: #333;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+        border-radius: 5px;
+      }
+      
+      .header .menu-icon .navicon:before {
+        top: 2vw;
+      }
+      
+      .header .menu-icon .navicon:after {
+        top: -2vw;
+      }
+
+      .header .menu-btn {
+        display: none;
+      }
+      
+      .header .menu-btn:checked ~ .menu {
+        max-height: 120vw;
+      }
+      
+      .header .menu-btn:checked ~ .menu-icon .navicon {
+        background: none;
+      }
+     
+      .header .menu-btn:checked ~ .menu-icon .navicon:before {
+        transform: rotate(-45deg);
+      }
+      
+      .header .menu-btn:checked ~ .menu-icon .navicon:after {
+        transform: rotate(45deg);
+      }
+      
+      .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+      .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0;
+      }
+
+    .registerButton, .menuAbout, .menuConnect, .menuEvents, .menuPrograms, .menuSponsor{
+        display: none;
+    }
 }
