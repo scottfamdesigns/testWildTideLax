@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>WildTide Lacrosse</title>
+        <link rel="icon" type="image/x-ixon" href="logo.png">
         <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>   
@@ -112,16 +114,16 @@
                 color: #FFFFFF;
             }
 
-            @media screen and (min-width: 690px){
+            @media screen and (min-width: 481px){
                 .torchRunHeroImageMobile, .footerImageMobile, .torchRunImageMobile, .rebeccaCarryTorchImageMobile, .torchRunTextContentMobile,
                 .torchRunFooterImageMobile {
                     display: none;
                 }
             }
 
-            @media screen and (max-width: 690px) {
+            @media screen and (max-width: 481px) {
                 .torchRunHeroImage, .footerImage, .torchRunImage, .rebeccaCarryTorchImage,  .torchRunTextContent,
-                .torchRunFooterImage{
+                .torchRunFooterImage, .footerImage{
                     display: none;
                 }
 
@@ -132,13 +134,13 @@
 
                 .torchRunHeroImageMobile {
                     position: absolute;
-                    top: 19vw;
+                    top: 24vw;
                     width: 100%;
                     left: 0vw;
                 }
 
                 .specialOlympicsNCLogo {
-                    top: 143vw;
+                    top: 144vw;
                     width: 30vw;
                     left: 35vw;
                 }
@@ -193,23 +195,16 @@
 
                 .footerBar {
                     position: absolute;
-                    top: 75vw;
-                    height: 37vw;
+                    top: 74vw;
+                    height: 35vw;
                 }
 
                 .footerText {
                     font-size: 3.25vw;
                     width: 90vw;
                     left: 5vw;
-                    top: 9vw;
+                    top: 4vw;
                     line-height: 4.5vw;
-                }
-
-                .footerImageMobile {
-                    position: absolute;
-                    top: 1vw;
-                    left: 45vw;
-                    width: 10vw;
                 }
 
             }
@@ -228,9 +223,10 @@
                 <input class="menu-btn" type="checkbox" id="menu-btn" />
                 <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                 <ul class="menu">
-                    <li><a href="index.html#mainPageText">About</a></li>
+                    <li><a href="index.html#aboutUsLink">About</a></li>
                     <li><a href="girlsPage.html">Girls Program</a></li>
                     <li><a href="boysPage.html">Boys Program</a></li>
+                    <li><a href="devPage.html">Developmental Program</a></li>
                     <li><a href="pinkOutPage.html">Pink Out</a></li>
                     <li><a href="torchRunPage.html">Torch Run</a></li>
                     <li><a href="index.html#sponsorLink">Sponsors</a></li>
@@ -273,7 +269,9 @@
             <img src="torchRunHeroImageMobile.png" class="torchRunHeroImageMobile">
         </div>
         <div>
-            <img src="specialOlympicsNCLogo.png" class="specialOlympicsNCLogo">
+            <a target="_blank" rel="noopener noreferrer" href="https://sonc.net">
+                <img src="specialOlympicsNCLogo.png" class="specialOlympicsNCLogo">
+            </a>
             <p class="torchRunText torchRunTextContent">
                 WildTide is a proud supporter of the Special Olympics Movement. <br/><br/>
                 This year WildTide will be participating in the Law Enforcement Torch Run and partnering with Special Olympics Brunswick County to lead North Carolina in its first and only Inclusion Lacrosse Program. 
@@ -307,7 +305,6 @@
             <img src="torchRunFooterImage.png" class="torchRunFooterImage">
             <img src="torchRunFooterImageMobile.png" class="torchRunFooterImageMobile">
             <div class="footerBar">
-                <img src="footerWildTideImageMobile.png" class="footerImageMobile">
                 <img src="footerWildTideImage.png" class="footerImage">
                 <p class="footerText">WildTide Lacrosse is part of the Brunswick County Youth Council -  a 501(c)(3) nonprofit organization. <br/><br/> Copyright 2024 © WildTide Lacrosse <br/> All Rights Reserved.</p>
             </div>

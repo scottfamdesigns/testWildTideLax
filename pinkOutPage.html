@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>WildTide Lacrosse</title>
+        <link rel="icon" type="image/x-ixon" href="logo.png">
         <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>  
@@ -29,11 +31,18 @@
 
             .goingBeyondImage {
                 position: absolute;
-                width: 100%;
+                width: 59vw;
                 left: 0vw;
                 top: 63.5vw;
                 background-repeat: no-repeat;
                 object-fit: cover;
+            }
+
+            .beyondThePinkLogo {
+                position: absolute;
+                width: 18vw;
+                top: 107vw;
+                left: 14vw;
             }
 
             .leadershipCommunityImage {
@@ -122,33 +131,33 @@
                 color: #FFFFFF;
             }
 
-            @media screen and (min-width: 690px){
+            @media screen and (min-width: 481px){
                 .goingBeyondImageMobile, .pinkOutHeroImageMobile, .pinkOutDescriptionBackground, .leadershipCommunityImageMobile, .pinkOutButton {
                     display: none;
                 }
             }
 
-            @media screen and (max-width: 690px) {
-                .pinkOutHeroImage, .goingBeyondImage {
+            @media screen and (max-width: 481px) {
+                .pinkOutHeroImage, .goingBeyondImage, .footerImage {
                     display: none;
                 }
                 
                 .pinkOutWhiteCircle {
-                    left: 34.5vw;
+                    left: 34.75vw;
                     min-width: 30.5vw;
                     min-height: 30.5vw;
-                    top: 2.7vw;
+                    top: 6.3vw;
                 }
 
                 .pinkOutHeroImageMobile {
                     position: absolute;
-                    top: 20vw;
+                    top: 24vw;
                     width: 100%;
                     left: 0vw;
                 }
 
                 .communityText {
-                    top: 125vw;
+                    top: 127vw;
                     width: 90vw;
                     left: 5vw;
 
@@ -160,7 +169,7 @@
                     position: absolute;
                     width: 90vw;
                     left: 5vw;
-                    top: 147vw;
+                    top: 148vw;
 
                     background: linear-gradient(90deg, #FE0A95 0%, #010E34 100%);
                     box-shadow: 0px 4px 4px #010E34;
@@ -184,6 +193,12 @@
                     top: 168vw;
                     width: 100%;
                     left: 0vw;
+                }
+
+                .beyondThePinkLogo {
+                    top: 220vw;
+                    width: 40vw;
+                    left: 9vw;
                 }
 
                 .leadershipCommunityImage {
@@ -240,7 +255,7 @@
                     font-size: 3.25vw;
                     width: 90vw;
                     left: 5vw;
-                    top: 6vw;
+                    top: 4vw;
                     line-height: 4.5vw;
                 }
 
@@ -266,9 +281,10 @@
                 <input class="menu-btn" type="checkbox" id="menu-btn" />
                 <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                 <ul class="menu">
-                    <li><a href="index.html#mainPageText">About</a></li>
+                    <li><a href="index.html#aboutUsLink">About</a></li>
                     <li><a href="girlsPage.html">Girls Program</a></li>
                     <li><a href="boysPage.html">Boys Program</a></li>
+                    <li><a href="devPage.html">Developmental Program</a></li>
                     <li><a href="pinkOutPage.html">Pink Out</a></li>
                     <li><a href="torchRunPage.html">Torch Run</a></li>
                     <li><a href="index.html#sponsorLink">Sponsors</a></li>
@@ -311,9 +327,14 @@
             <img src="pinkOutHeroImageMobile.png" class="pinkOutHeroImageMobile">
         </div>
         <div>
-            <button class="pinkOutButton">Donate Now & Help Us Fight Breast Cancer</button>
+            <a href="mailto:Janet@bluecoastreality.com?subject=I want to help WildTide Fight Breast Cancer">
+                <button class="pinkOutButton">HELP US FIGHT BREAST CANCER</button>
+            </a>
             <img src="goingBeyondImage.png" class="goingBeyondImage">
             <img src="goingBeyondImageMobile.png" class="goingBeyondImageMobile">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.goingbeyondthepink.org">
+                <img src="beyondThePinkLogo.png" class="beyondThePinkLogo"> 
+            </a>
             <p class="pinkOutText leadershipText">
                 To WildTide leadership means community involvement. WildTide supports their local community by hosting events like their annual PinkOut Fundraising Event- a lacrosse match where all proceeds go to Going Beyond the Pink- providing financial assistance and thousands of support resources to our breast cancer community- and a selected local breast cancer survivor to support their fight.
             </p>
@@ -326,6 +347,7 @@
             <img src="pinkOutTeamImage.png" class="pinkOutImage">
         </div>
         <div>
+            <img src="pinkOutDescriptionBackground.png" class="pinkOutDescriptionBackground">
             <p class="pinkOutText pinkOutDescription">
                 ”Pink Out”<br/><br/>
                 In 2021 when one of our founding members, Maryann Dolan, was diagnosed with breast cancer, our Lacrosse Family wanted to do something to support her so we decided to hold a fundraiser!<br/><br/>
@@ -338,7 +360,6 @@
                 Interested in fundraising or donating to this mission? <br/>
                 Please reach out to our Fundraising Coordinator, <a href="mailto:Janet@bluecoastreality.com">Janet@bluecoastreality.com</a>
             </p>
-            <img src="pinkOutDescriptionBackground.png" class="pinkOutDescriptionBackground">
         </div>
         <div class="footerBar">
             <img src="footerWildTideImage.png" class="footerImage">

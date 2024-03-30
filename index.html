@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <title>WildTide Lacrosse</title>
+        <link rel="icon" type="image/x-ixon" href="logo.png">
         <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
+        <style media="screen" type="text/css">
         @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap');   
             .backgroundImage {
                 position: absolute;
@@ -14,8 +15,15 @@
                 background-repeat: no-repeat;
                 object-fit: cover;
                 object-position: 70%;
-                opacity: 0.1;
                 filter: drop-shadow(px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            }
+
+            .homeMainImage {
+                position: absolute;
+                width: 100%;
+                left: 0vw;
+                top: 10vw;
+
             }
             
             .wildTideWords{
@@ -26,51 +34,40 @@
                 object-fit: contain;
             }
 
-            .registerButton {
+            .socialButtonsFacebookGirls {
                 position: absolute;
-                width: 21.73vw;
-                left: 75vw;
-                top: 13.5vw;
-
-                background: linear-gradient(90deg, #071E5A 0%, #4DBCBE 100%);
-                box-shadow: 0px 4px 4px #010E34;
-                border-radius: 5px;
-
-                font-family: 'Encode Sans';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 1.4vw;
-                text-align: center;
-                text-decoration: none;
-                padding-top: 1vw;
-                padding-bottom: 1vw;
-                letter-spacing: 0.09em;
-
-                color: #FFFFFF;
+                width: 3vw;
+                left: 5vw;
+                top: 43vw;
             }
 
-            .socialButtonsFacebook {
+            .socialButtonsInstaGirls {
                 position: absolute;
-                width: 41px;
-                height: 41px;
-                left: 37.5vw;
-                top: 62vw;
+                width: 3vw;
+                left: 5vw;
+                top: 39vw;
             }
 
-            .socialButtonsInsta {
+            .socialButtonsFacebookBoys{
                 position: absolute;
-                width: 41px;
-                height: 41px;
-                left: 56vw;
-                top: 62vw;
+                width: 3vw;
+                right: 5vw;
+                top: 43vw;
+            }
+
+            .socialButtonsInstaBoys {
+                position: absolute;
+                width: 3vw;
+                right: 5vw;
+                top: 39vw;
             }
 
             .mainPageText {
                 position: absolute;
-                width: 28vw;
+                width: 30vw;
                 height: 4.0vw;
-                left: 36vw;
-                top: 46vw;
+                left: 35vw;
+                top: 49vw;
 
                 font-family: 'Encode Sans';
                 font-style: normal;
@@ -86,21 +83,21 @@
                 position: absolute;
                 width: 20vw;
                 left: 10vw;
-                top: 54vw;
+                top: 57.2vw;
             }
 
             .whyWildTideButton {
                 position: absolute;
                 width: 20vw;
                 left: 40vw;
-                top: 54vw;
+                top: 57.2vw;
             }
 
             .communityStrengthButton {
                 position: absolute;
                 width: 20vw;
                 left: 70vw;
-                top: 54vw;
+                top: 57.2vw;
             }
 
             .solidBlueButton {
@@ -132,7 +129,7 @@
 
             .girlImage {
                 position: absolute;
-                width: 31%;
+                width: 30vw;
                 left: 4vw;
                 padding-top: 15vw;
                 object-fit: cover;
@@ -146,18 +143,19 @@
                 top: 62vw;
 
             }
+
+            .aboutUsBackgroundDesktop {
+                position: absolute;
+                width: 100%;
+                left: 0vw;
+                top: 63vw;
+            }
             
             .aboutUsBackground {
                 position: absolute;
                 width: 100%;
-                height: 76vw;
                 left: 0vw;
                 top: 59.85vw;
-
-                filter: grayscale(100%);
-
-                opacity: 0.9;
-
             }
 
             .aboutUsColor {
@@ -166,30 +164,14 @@
                 height: 76vw;
                 left: 0px;
                 top: 59.85vw;
-                opacity: .8;
 
                 display: inline-block;
-
-                background-color: #374979;
 
             }
 
             #aboutUsLink {
                 position: absolute;
                 top: 50vw;
-            }
-
-            .aboutUsBar {
-                position: absolute;
-                width: 100%;
-                height: 11vw;
-                left: 0vw;
-                top: 59.85vw;
-
-                opacity: .5;
-
-                background: linear-gradient(90deg, rgba(7, 30, 90, 0.79) 43.63%, rgba(77, 188, 190, 0.79) 80.87%);
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             }
 
             .aboutUs {
@@ -339,7 +321,6 @@
                 font-size: 1.5vw;
                 line-height: 3.5vw;
                 text-align: center;
-                z-index: 100;
 
                 color: #FFFFFF;
             }
@@ -360,7 +341,6 @@
                 font-size: 1.5vw;
                 line-height: 3.5vw;
                 text-align: center;
-                z-index: 100;
 
                 color: #FFFFFF;
             }
@@ -381,7 +361,6 @@
                 font-size: 1.5vw;
                 line-height: 3.5vw;
                 text-align: center;
-                z-index: 100;
 
                 color: #FFFFFF;
             }
@@ -451,8 +430,8 @@
             .thankYouSponsors {
                 position: absolute;
                 top: 0vw;
-                width: 35vw;
-                left: 32.5vw;
+                width: 45vw;
+                left: 27.5vw;
             }
 
             .sponsorSarahsKitchen {
@@ -483,7 +462,7 @@
                 width: 100%;
                 height: 8vw;
                 left: 0px;
-                top: 330vw;
+                top: 328vw;
 
                 background: linear-gradient(90deg, rgba(7, 30, 90, 0.79) 43.63%, rgba(77, 188, 190, 0.79) 80.87%);
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -512,28 +491,23 @@
                 color: #FFFFFF;
             }
 
-            .layer1_class {
-                position: absolute;
-                top: 30vw;
-                left: 30vw;
-                visibility: visible;
-            }
-
-            .layer2_class {
-                position: absolute;
-                top: 0vw;
-                left: 0vw;
-                visibility: hidden;
-            }
-
-            @media screen and (min-width: 690px){
+            @media screen and (min-width: 481px){
                 .findYourGirlsMobile, .findYourBoysMobile, .findYourDevMobile, .findYourProgramMobile, .registerMobile,
-                .weSupportYou {
+                .weSupportYou, .homeMainImageMobile, .comePlayWithUs, .aboutUsBackground, .socialButtonsFacebook, .socialButtonsInsta,
+                .ourStoryMobile {
                     display: none;
                 }
             }
 
-            @media screen and (max-width: 690px){
+            @media screen and (max-width: 481px){
+
+                .homeMainImageMobile {
+                    position: absolute;
+                    top: 20vw;
+                    left: 0vw;
+                    width: 100%;
+                }
+
                 .wildTideWords {
                     position: absolute;
                     width: 78vw;
@@ -561,14 +535,7 @@
                     position: absolute;
                     width: 100%;
                     left: 0vw;
-                    top: 370vw;
-
-                    filter: grayscale(2);
-                }
-
-                .aboutUsColor {
-                    top: 445vw;
-                    height: 220vw;
+                    top: 360vw;
                 }
 
                 .aboutImage {
@@ -593,37 +560,53 @@
                 }
 
                 .aboutUsBar {
+                    position: absolute;
+                    width: 100%;
                     top: 350vw;
+                    left: 0vw;
                     height: 20vw;
                     opacity: 1;
+
+
+                    background: linear-gradient(90deg, rgba(7, 30, 90, 0.79) 43.63%, rgba(77, 188, 190, 0.79) 80.87%);
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                }
+
+                #aboutUsLink {
+                    position: absolute;
+                    top: 330vw;
+                }
+
+                #sponsorLink {
+                    position: absolute;
+                    top: 810vw;
                 }
 
                 .aboutUsColorMobile {
                     position: absolute;
                     width: 100%;
-                    height: 80vw;
+                    height: 180vw;
                     left: 0px;
-                    top: 370vw;
+                    top: 446vw;
                     display: inline-block;
-
-                    opacity: .75;
 
                     background-color: #374979;
                 }
 
                 .findYourProgramButton, .whyWildTideButton, .communityStrengthButton, .girlsFindButton, .boysFindButton, .devFindButton,
                 .findBoysBackground, .findBoysBackgroundBox, .findDevBackground, .findDevBackgroundBox, .findGirlsBackground, .findGirlsBackgroundBox,
-                .findBoysImage, .findDevImage, .findGirlsImage, .findYourProgramBackground, .findYour, .program, .ourStoryHeader {
+                .findBoysImage, .findDevImage, .findGirlsImage, .findYourProgramBackground, .findYour, .program, .ourStoryHeader, .homeMainImage, .aboutUsColor,
+                .aboutUsBackgroundDesktop, .footerImage, .socialButtonsFacebookBoys, .socialButtonsFacebookGirls, .socialButtonsInstaBoys, .socialButtonsInstaGirls {
                     display: none;
                 }
 
                 .whatWeDo {
-                    top: 450vw;
-                    width: 90vw;
+                    top: 467vw;
+                    width: 86vw;
                     left: 5vw;
 
                     font-weight: 600;
-                    font-size: 4.7vw;
+                    font-size: 4.3vw;
                     line-height: 3.5vw;
                     text-align: center;
 
@@ -631,12 +614,12 @@
                 }
 
                 .mission {
-                    top: 505vw;
-                    width: 90vw;
+                    top: 528vw;
+                    width: 86vw;
                     left: 5vw;
 
                     font-weight: 600;
-                    font-size: 4.7vw;
+                    font-size: 4.3vw;
                     line-height: 3.5vw;
                     text-align: center;
 
@@ -644,12 +627,12 @@
                 }
 
                 .whoWeAre {
-                    top: 553vw;
-                    width: 90vw;
+                    top: 579vw;
+                    width: 86vw;
                     left: 5vw;
 
                     font-weight: 600;
-                    font-size: 4.7vw;
+                    font-size: 4.3vw;
                     line-height: 3.5vw;
                     text-align: center;
 
@@ -657,12 +640,12 @@
                 }
 
                 .ageGroupsWeSupport {
-                    top: 608vw;
-                    width: 90vw;
+                    top: 635vw;
+                    width: 86vw;
                     left: 5vw;
 
                     font-weight: 600;
-                    font-size: 4.7vw;
+                    font-size: 4.3vw;
                     line-height: 3.5vw;
                     text-align: center;
 
@@ -670,14 +653,16 @@
                 }
 
                 .socialButtonsFacebook {
-                    top: 143vw;
+                    position: absolute;
+                    top: 142vw;
                     left: 55vw;
                     width: 10vw;
                     height: 10vw;
                 }
 
                 .socialButtonsInsta {
-                    top: 143vw;
+                    position: absolute;
+                    top: 142vw;
                     left: 35vw;
                     width: 10vw;
                     height: 10vw;
@@ -695,7 +680,7 @@
                 }
 
                 .mainPageText {
-                    top: 150vw;
+                    top: 151vw;
                     width: 100%;
                     left: 0vw;
 
@@ -731,12 +716,19 @@
                 }
 
                 .ourStory {
-                    top: 674vw;
+                    top: 721vw;
                     
-                    font-size: 3vw;
+                    font-size: 4vw;
                     width: 82vw;
-                    left: 4vw;
-                    line-height: 4vw;
+                    left: 8vw;
+                    line-height: 6vw;
+                }
+
+                .ourStoryMobile {
+                    position: absolute;
+                    top: 712vw;
+                    width: 50vw;
+                    left: 25vw;
                 }
 
                 .gradientButton {
@@ -753,7 +745,6 @@
                     padding-top: 4vw;
                     padding-bottom: 4vw;
                     letter-spacing: 0.09em;
-                    z-index: 1;
 
                     color: #FFFFFF;
                 }
@@ -765,22 +756,23 @@
                     width: 80vw;
                 }
 
-                .weSupportYou {
+                .comePlayWithUs {
                     position: absolute;
-                    top: 190vw;
-                    left: 15vw;
+                    top: 198vw;
+                    left: 10vw;
                     width: 80vw;
+                    transform: rotate(-5deg);
                 }
 
                 #sponsorSection {
-                    top: 810vw;
+                    top: 979vw;
                 }
 
                 .sponsorContact {
                     width: 90vw;
                     left: 2.5vw;
-                    font-size: 2.5vw;
-                    line-height: 4.5vw;
+                    font-size: 4vw;
+                    line-height: 6vw;
                 }
 
                 .sponsorSarahsKitchen {
@@ -793,76 +785,54 @@
                 }
 
                 .footerBar {
-                    top: 860vw;
-                    height: 35vw;
+                    top: 1045vw;
+                    height: 30vw;
                 }
 
                 .footerText {
                     font-size: 3.25vw;
                     width: 95vw;
                     left: 2vw;
-                    top: 6vw;
+                    top: 2vw;
                     line-height: 4.5vw;
                 }
 
-                .footerImage {
-                    top: 2vw;
-                    left: 40vw;
-                    width: 20vw;
-                }
             }
 
         </style>
-        <script>
-            function downLoad() {
-                if (document.all){
-                    document.all["layer1"].style.visibility="hidden";
-                    document.all["layer2"].style.visibility="visible";
-                } else if (document.getElementById){
-                    node = document.getElementById("layer1").style.visibility="hidden";
-                    node = document.getElementById("layer2").style.visibility="visible";
-                }
-            }
-        </script>
     </head>
-    <body onload="downLoad()">
-        <div id="layer1" class="layer1_class">
-            <div id="loader">
-            </div>
-            <img src="logo.png" class="loadingLogo loadingBackground">
-        </div>
-        <div id="layer2" class="layer2_class">
-        </div>
-            
-        <div class="headerBar">
-            <img src="waveBanner.png" class="headerBarImage">
-            <header class="header">
-            <a href="/" class="logo"></a>
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-            <ul class="menu">
-                <li><a href="index.html#mainPageText">About</a></li>
-                <li><a href="girlsPage.html">Girls Program</a></li>
-                <li><a href="boysPage.html">Boys Program</a></li>
-                <li><a href="pinkOutPage.html">Pink Out</a></li>
-                <li><a href="torchRunPage.html">Torch Run</a></li>
-                <li><a href="index.html#sponsors">Sponsors</a></li>
-            </ul>
-            </header>
-            <a href="index.html">
-                <img src="logo.png" class="logo">
-            </a>
-            <a href="index.html#aboutUsLink" class="menuAbout menuButtonsText">ABOUT</a>
-            <div class="dropdown"><a class="menuPrograms menuButtonsText">PROGRAMS</a>
-                <div class="dropdown-content row">
-                    <p class="menuDropDownDescription column"><strong>Programs</strong><br/>Find your program</p>
-                    <div class="menuDropDown column">
-                        <a href="girlsPage.html">Girls Program</a>
-                        <a href="boysPage.html">Boys Program</a>
-                        <a href="devPage.html">Developmental Program</a>
+    <body>
+            <div class="headerBar">
+                <img src="waveBanner.png" class="headerBarImage">
+                <header class="header">
+                <a href="/" class="logo"></a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="index.html#aboutUsLink">About</a></li>
+                    <li><a href="girlsPage.html">Girls Program</a></li>
+                    <li><a href="boysPage.html">Boys Program</a></li>
+                    <li><a href="devPage.html">Developmental Program</a></li>
+                    <li><a href="pinkOutPage.html">Pink Out</a></li>
+                    <li><a href="torchRunPage.html">Torch Run</a></li>
+                    <li><a href="index.html#sponsorLink">Sponsors</a></li>
+                </ul>
+                <label class="closeMenu" for="menu-btn"></label>
+                </header>
+                <a href="index.html">
+                    <img src="logo.png" class="logo">
+                </a>
+                <a href="index.html#aboutUsLink" class="menuAbout menuButtonsText">ABOUT</a>
+                <div class="dropdown"><a class="menuPrograms menuButtonsText">PROGRAMS</a>
+                    <div class="dropdown-content row">
+                        <p class="menuDropDownDescription column"><strong>Programs</strong><br/>Find your program</p>
+                        <div class="menuDropDown column">
+                            <a href="girlsPage.html">Girls Program</a>
+                            <a href="boysPage.html">Boys Program</a>
+                            <a href="devPage.html">Developmental Program</a>
+                        </div>
                     </div>
                 </div>
-            </div>
             <div class="dropdown"><a class="menuConnect menuButtonsText">CONNECT</a>
                 <div class="dropdown-content row">
                     <p class="menuDropDownDescription column"><strong>Connect</strong><br/>Connect with us</p>
@@ -885,26 +855,38 @@
             <a href="index.html#sponsorLink" class="menuSponsor menuButtonsText">SPONSOR</a>
         </div>
         <div>
-            <img src="background.jpg" class="backgroundImage">
+            <a href="https://wildtide.usetopscore.com" class="registerButton">REGISTER FOR 2024 SEASON</a>
         </div>
         <div>
-            <a href="https://wildtide.usetopscore.com" class="registerButton">Register for 2024 Season</a>
-        </div>
-        <div>
-            <img src="boymainpage.png" class="boyImage">
-            <img src="girlmainpage.png" class="girlImage">
-            <img src="wildtide_lacrosse_wording_image-removebg.png" class="wildTideWords">
+            <img src="homeMainImage.png" class="homeMainImage">
+            <img src="homeMainImageMobile.png" class="homeMainImageMobile">
         </div>
         <div>
             <p class="mainPageText">The premiere youth travel lacrosse organization for Brunswick County, North Carolina.</p>
         </div>
-        <div class="socialButtonsBar">
-            <img src="socialbutton-facebook.png" class="socialButtonsFacebook">
-            <img src="socialbutton-instagram.png" class="socialButtonsInsta">
+        <div>
+            <a href="https://www.facebook.com/profile.php?id=61555624635626">
+                <img src="socialbutton-facebook.png" class="socialButtonsFacebook">
+            </a>
+            <a href="https://www.instagram.com/wildtidelax?igsh=MThpcXQ1bTEzbXA1aw==">
+                <img src="socialbutton-instagram.png" class="socialButtonsInsta">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61555624635626">
+                <img src="socialbutton-facebook.png" class="socialButtonsFacebookGirls">
+            </a>
+            <a href="https://www.instagram.com/wildtidelax?igsh=MThpcXQ1bTEzbXA1aw==">
+                <img src="socialbutton-instagram.png" class="socialButtonsInstaGirls">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61555624635626">
+                <img src="socialbutton-facebook.png" class="socialButtonsFacebookBoys">
+            </a>
+            <a href="https://www.instagram.com/wildtidelax?igsh=MThpcXQ1bTEzbXA1aw==">
+                <img src="socialbutton-instagram.png" class="socialButtonsInstaBoys">
+            </a>
         </div>
         <div>
-            <a href="https://wildtide.usetopscore.com" class="gradientButton registerMobile">Register for 2024 Season</a>
-            <img src="wesupportyoupink.png" class="weSupportYou">
+            <a href="wildtide.usetopscore.com" class="gradientButton registerMobile">REGISTER FOR 2024 SEASON</a>
+            <img src="comePlayWithUs.png" class="comePlayWithUs">
         </div>
         <div id="findYourProgramLink"></div>
         <div>
@@ -914,11 +896,10 @@
         </div>
         <div id="aboutUsLink"></div>
         <div class="aboutUs">
-            <img src="aboutUsImage.jpeg" class="aboutUsBackground">
-            <a class="aboutUsColor"></a>
-            <a class="aboutUsColorMobile"></a>
             <a class="aboutUsBar"></a>
-            <img src="aboutUsWords.png" class="aboutImage">
+            <a class="aboutUsColor"></a>
+            <img src="aboutUsImageDesktop.png" class="aboutUsBackgroundDesktop">
+            <img src="aboutUsImage.png" class="aboutUsBackground">
             <p class="whatWeDo">What We Do: <br/><br/> WildTide provides the opportunity for girls and boys to play lacrosse - ranging from the first time you hold a stick to support for college recruitment. We are committed to the growth of lacrosse in Brunswick County, NC.</p>
             <p class="mission">Mission: <br/><br/> To support youth lacrosse players, empowering well-rounded individuals who strengthen our community with the skills and lessons for success in life.</p>
             <p class="whoWeAre">Who We Are: <br/><br/> WildTide is the premiere youth travel lacrosse organization for Brunswick County, North Carolina serving as a part of the Brunswick County Youth Council, a 501(3)c nonprofit organization.</p>
@@ -943,7 +924,7 @@
             <img src="boysFindProgramImage.png" class="findBoysImage">
             <div>
                 <a href="boysPage.html">
-                    <img src="findYourBoysProgram.png" class="findYourBoysMobile">                       
+                    <img src="findYourBoysProgram.png" class="findYourBoysMobile">                     
                 </a>
             </div>
             <a href="boysPage.html"><button class="boysFindButton">BOYS PROGRAM</button></a>
@@ -958,13 +939,14 @@
             <img src="findYourProgramMobile.png" class="findYourProgramMobile">
         </div>
         <div>
+            <img src="ourStory.png" class="ourStoryMobile">
             <img src="ourStory.png" class="ourStoryHeader">
             <p class="ourStory">Where we came from.
                 <br/><br/>In 2018, founders Anne Dotson, Brandie Price, Maryann Dolan and Rebecca Allen partnered with nonprofit Brunswick County Youth Council 501(c)3 to form WildTide as a place for young athletes to not just learn this amazing sport, but learn valuable life skills - such as teamwork, time management, the importance of working towards goals, community engagement and much more. 
                 <br/><br/>Originally, our program started as a Middle School Girls Team, but over the years we have grown to now encompass those in Middle School, High School, and Developmental Program for both young ladies and young men in and around our county.
                 <br/><br/>In 2021 we had our first group of graduating seniors, and since that year we have helped over a dozen players earn scholarship opportunities to continue not only their lacrosse career, but their education.
                 <br/><br/>We believe in “Recycling Lacrosse” - so we have a number of former players who return to assist coaching so that our younger generation can see the older generation of players and hear from them and gain knowledge of what it takes to get to the next level.
-                <br/><br/>At wild tide we not only believe in building the team, but building the individual. We want all of our players to have the confidence to navigate the world ahead of them.
+                <br/><br/>At WildTide we not only believe in building the team, but building the individual. We want all of our players to have the confidence to navigate the world ahead of them.
                 <br/><br/>Come play with us and Rise with the Tide. </p>
         </div>
         <div id="sponsorLink"></div>
@@ -981,6 +963,6 @@
             <img src="footerWildTideImage.png" class="footerImage">
             <p class="footerText">WildTide Lacrosse is part of the Brunswick County Youth Council -  a 501(c)(3) nonprofit organization. <br/><br/> Copyright 2024 © WildTide Lacrosse <br/> All Rights Reserved.</p>
         </div>
-        </div>
+    </div>
     </body>
 </html>

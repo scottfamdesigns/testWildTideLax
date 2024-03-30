@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>WildTide Lacrosse</title>
+        <link rel="icon" type="image/x-ixon" href="logo.png">
         <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>   
@@ -50,48 +52,40 @@
 
             }
 
-            .registerForGirlsDevButton {
-                position: absolute;
-                width: 30vw;
-                height: 4vw;
-                left: 17vw;
-                top: 72vw;
-
-                background: #071E5A;
-                border-radius: 10px;
+            .gradientButton {
+                background: linear-gradient(90deg, #071E5A 0%, #4DBCBE 100%);
+                box-shadow: 0px 4px 4px #010E34;
+                border-radius: 15px;
 
                 font-family: 'Encode Sans';
                 font-style: normal;
-                font-weight: 600;
-                font-size: 1.5vw;
-                line-height: 3vw;
+                font-weight: 700;
+                font-size: 1.4vw;
                 text-align: center;
-                padding-top: 1vw;
-                z-index: 100;
+                text-decoration: none;
+                padding-top: 2vw;
+                padding-right: 1vw;
+                padding-left: 1vw;
+                padding-bottom: 1vw;
+                letter-spacing: 0.09em;
 
                 color: #FFFFFF;
+                }
+
+            .registerForGirlsDevButton {
+                position: absolute;
+                width: 30vw;
+                height: 3vw;
+                left: 17vw;
+                top: 76vw;
             }
 
             .registerForBoysDevButton {
                 position: absolute;
                 width: 30vw;
-                height: 4vw;
+                height: 3vw;
                 left: 52vw;
-                top: 72vw;
-
-                background: #071E5A;
-                border-radius: 10px;
-
-                font-family: 'Encode Sans';
-                font-style: normal;
-                font-weight: 600;
-                font-size: 1.5vw;
-                line-height: 3vw;
-                text-align: center;
-                padding-top: 1vw;
-                z-index: 100;
-
-                color: #FFFFFF;
+                top: 76vw;
             }
 
             .quickFactsText{
@@ -169,23 +163,23 @@
                 color: #FFFFFF;
             }
 
-            @media screen and (min-width: 690px){
+            @media screen and (min-width: 481px){
                 .devTeamMainImageMobile, .registerMobile, .moreThanLacrosseImagesMobile, .whereYouBelongImageMobile, .whereYouBelongMobileTextImage,
                 .devQuickFactsBackgroundMobile {
                     display: none;
                 }
             }
 
-            @media screen and (max-width: 690px){
+            @media screen and (max-width: 481px){
                 .devTeamMainImageMobile {
                     position: absolute;
-                    top: 14vw;
+                    top: 24vw;
                     left: 0vw;
                     width: 100%;
                 }
 
                 .committedToGrowthText {
-                    top: 125vw;
+                    top: 135vw;
                     width: 80vw;
                     left: 10vw;
 
@@ -231,19 +225,19 @@
                 }
 
                 .registerForBoysDevButton {
-                    top: 140vw;
+                    top: 152vw;
                     width: 80vw;
                     left: 10vw;
                 }
 
                 .registerForGirlsDevButton {
-                    top: 160vw;
+                    top: 172vw;
                     width: 80vw;
                     left: 10vw;
                 }
 
                 .devHeroImage, .heroBackgroundImage, .beyondThePinkLogo, .specialOlympicsLogo, .moreThanLacrosseImages, .whereYouBelongBackground, .whereYouBelongBackgroundGrass, 
-                .whereYouBelongText, .whereYouBelongImages, .devQuickFactsBackground, .rosiQuote{
+                .whereYouBelongText, .whereYouBelongImages, .devQuickFactsBackground, .rosiQuote, .footerImage{
                     display: none;
                 }
 
@@ -375,15 +369,10 @@
                     font-size: 3.25vw;
                     width: 90vw;
                     left: 5vw;
-                    top: 6vw;
+                    top: 4vw;
                     line-height: 4.5vw;
                 }
 
-                .footerImage {
-                    top: 2vw;
-                    left: 40vw;
-                    width: 20vw;
-                }
             }
 
 
@@ -400,9 +389,10 @@
                 <input class="menu-btn" type="checkbox" id="menu-btn" />
                 <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                 <ul class="menu">
-                    <li><a href="index.html#mainPageText">About</a></li>
+                    <li><a href="index.html#aboutUsLink">About</a></li>
                     <li><a href="girlsPage.html">Girls Program</a></li>
                     <li><a href="boysPage.html">Boys Program</a></li>
+                    <li><a href="devPage.html">Developmental Program</a></li>
                     <li><a href="pinkOutPage.html">Pink Out</a></li>
                     <li><a href="torchRunPage.html">Torch Run</a></li>
                     <li><a href="index.html#sponsorLink">Sponsors</a></li>
