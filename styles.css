@@ -68,7 +68,7 @@ html, body {
     display: none;
     position: absolute;
     background-color: #374979;
-    width: 100%;
+    width: 100vw;
     height: 10vw;
     top: 7vw;
     
